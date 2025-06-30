@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback functions</title>
+</head>
+<body>
+    <script>
+function processNumber(num, callback) {
+  callback(num);
+}
+
+processNumber(5, function(n) {
+  console.log("Double is", n * 2);
+});
+
+
+    </script>
+</body>
+</html>
